@@ -194,10 +194,6 @@ var Game = {
 };
 
 
-
-
-
-
 var Player = function(){
 	this.width = 60;
 	this.height = 20;
@@ -252,11 +248,6 @@ Player.prototype.shoot = function(){
 	Game.bullets[Game.bulletIndex] = new Bullet(this.x + this.width/2);
 	Game.bulletIndex++;
 };
-
-
-
-
-
 
 var Bullet = function(x){  
 	this.width = 8;
